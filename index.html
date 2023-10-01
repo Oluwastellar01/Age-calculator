@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+
+  <link rel="stylesheet" type="text/css" href="style.css">
+
+  <!-- <script src="main.js" defer></script> -->
+  
+   <script src="confetti.js" defer></script> <!-- canvas coding -->
+
+  <title>Age Calculator App</title>
+</head>
+<body>
+
+
+  <div class="can">
+    <canvas class="confetti" id="canvas"></canvas>
+  </div>
+
+  <main>
+    <div class="container">
+
+      <div class="form">
+        <div class="form-group">
+          <label for="day">DAY</label>
+          <input type="text" id="day" name="day" placeholder="DD">
+          <span class="error day-error"></span>
+        </div>
+
+        <div class="form-group">
+          <label for="day">MONTH</label>
+          <input type="text" id="month" name="month" placeholder="MM">
+          <span class="error month-error"></span>
+        </div>
+
+        <div class="form-group">
+          <label for="day">YEAR</label>
+          <input type="text" id="year" name="year" placeholder="YYYY">
+          <span class="error year-error"></span>
+        </div>
+      </div>
+      
+      <hr>
+      <div class="btn">
+        <img src="/icon-arrow.svg" alt="icon arrow">
+        <span></span>
+      </div>
+      
+      <div class="result">
+        <h1><span class="year-result">- -</span>years</h1>
+        <h1><span class="month-result">- -</span>months</h1>
+        <h1><span class="day-result">- -</span>days</h1>
+      </div>
+      
+    </div>
+  </main>
+  <script src="script.js" defer></script>
+</body>
+</html>
